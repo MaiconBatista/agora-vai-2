@@ -13,13 +13,13 @@
     Arquivo A | Versão 1 | Versão 2
     Arquivo b | Versão 1 | Versão 2
 
-    ## Instalação do Git
+## Instalação do Git
     
-    ## Criar conta no GitHub
+## Criar conta no GitHub
     
-    ## Clonar o projeto
+## Clonar o projeto
    
-    ## Comits
+## Comits
     Informação de alteração
     - após testado todo seu código
 
