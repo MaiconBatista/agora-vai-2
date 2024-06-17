@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head> 
+		<title>HTML - Listas e Links</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>Listas e links</h1>
+
+		<h2 id="lista-nao-ordenada">Lista não ordenada</h2>
+		<!-- "id usado para identificar este h2 - Lista não ordenada, porque lá em baixo criamos um link que ao clicar vai diretamente para este h2 -->
+		<ul>
+			<li>Argentina</li>
+			<li>Uruguai</li>
+			<li>Paraguai</li>
+			<li>Brasil
+				<ul>
+					<li>São Paulo
+						<ol>
+							<li>São Paulo</li>
+						</ol>
+					</li>
+					<li>Rio de Janeiro</li>
+					<li>Minas Gerais</li>
+					<li>Pará
+						<ul>
+							<li>Belém</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		
+		<h2>Lista Ordenada</h2>
+		<ol>
+			<li>Argentina</li>
+			<li>Uruguai</li>
+			<li>Paraguai</li>
+			<li>Brasil
+				<ul>
+					<li>São Paulo</li>
+					<li>Rio de Janeiro</li>
+					<li>Minas Gerais</li>
+					<li>Pernambuco</li>
+						<ul>
+							<li>Recife</li>
+						</ul>
+				</ul>
+			</li>
+		</ol>
+		
+		<h2>Lista de definições</h2>
+		<dl>
+			<dt>TV</dt>
+			<dd>55 polegadas, smart, oled</dd>
+			<dd>220 volts</dd>
+			<dt>PC</dt>
+			<dd>RTX 3060, Ryzen 7 5800x3d, 32gb ram</dd>
+		</dl>
+		
+		<h2>Links</h2>
+			<a href="https://youtube.com.br">YouTube</a> <br>
+			<a href="#top">Topo</a> <br>
+			<a href="#lista-nao-ordenada">Ver a lista não ordenada</a>
+		<nav>
+			<ul>
+
+				<!--
+					CORS
+					Cross-Origin Resource Sharing (Compartilhamento de recursos com origens diferentes)
+				-->
+
+				<li><a href="https://youtube.com.br">YouTube</a></li>
+				<li><a href="#top">Topo</a></li>
+				<li><a href="#lista-nao-ordenada">Ver a lista não ordenada</a></li>
+			</ul>
+		</nav>
+
+	</body>
+</html>

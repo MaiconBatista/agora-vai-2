@@ -1,0 +1,97 @@
+<doctype html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Layouts</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+			<!--o meta criado acima foi usado para indicar ao navegador adaptar a página conforme o tamanho da tela seja um smarphone ou computador-->
+			<style>
+		* {
+			box-sizing: border-box;
+		}
+		
+		body {
+			font-family: Arial, Helvetica, Sans-serif;
+		}
+		
+		/* Style the header*/
+		header {
+			background-color: #666;
+			padding: 30px;
+			text-align: center;
+			font-size: 35px;
+			color: white;
+		}
+		
+		/*Create two columns/boxes that floats next to each other */
+		nav {
+			float: left;
+			width: 30%;
+			background: #ccc;
+			padding: 20px;
+		}
+		
+		/* style the list inside the menu */
+		nav ul {
+			list-style-type: none;
+			padding: 0;
+		}
+		article {
+			float: left;
+			padding: 20px;
+			width: 70%; 
+			background-color: #f1f1f1;
+		}
+		
+		/* Clear floats after the columns */
+		section::after {
+			background-color: #ccc;
+			content:"";
+			display: table;
+			clear: both;
+		}
+		
+		/* Style the footer */
+		footer {
+			background-color: #777;
+			padding: 10px;
+			text-align: center;
+			color: white;
+		}
+		
+		/* Responsive layout - makes the two columns/boxes stack on top of each other insted of next to each other, on small screens */
+		@media (max-width: 600px) {
+			nav, article {
+				width: 100%;
+				height: auto;
+			}
+		}
+		</style>
+	</head>
+	<body>
+		<header>
+		<!--O elemento HTML <header> representa um grupo de suporte introdutório ou navegacional. Pode conter alguns elementos de cabeçalho mas também outros elementos como um logo, seções de cabeçalho, formulário de pesquisa, e outros.-->
+			<h2>Curso front-end - HTML</h2>
+		</header>
+		<section>
+		<!--uma seção é um elemento semântico para criar seções independentes em uma página da web . Essas seções devem ser compostas de conteúdo relacionado, como informações de contato. O elemento section só deve ser utilizado caso não exista um elemento mais específico para representar o conteúdo relacionado.-->
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="./04.3-formularios.html">Contato</a></li>
+					<li><a href="./04.6-homepage.html">Homepage</a></li>
+				</ul>
+			</nav>
+			<article>
+			<!--O elemento article representa uma composição independente em um documento, página, aplicativo ou site e que é, em princípio, distribuível ou reutilizável de forma independente, por exemplo, em distribuição.-->
+				<h1>Título artigo</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse diam velit, tincidunt at elit sit amet, pretium dapibus erat. Aenean vitae mi id neque vulputate iaculis. In in suscipit felis. Aenean tempus molestie orci. Duis sem velit, blandit eget convallis mattis, venenatis quis elit. Vivamus consequat ante volutpat, mollis tellus dignissim, lobortis arcu. Fusce ac efficitur nisi, et semper urna. Sed eget semper sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam scelerisque aliquam rutrum. Maecenas facilisis metus id interdum aliquam.</p>
+				<p>Sed euismod risus in fringilla cursus. In in sem tempus, egestas dui vitae, mollis libero. Maecenas scelerisque est at tempor pretium. Donec gravida diam ac lorem posuere, ac dictum sapien ultricies. Donec nec enim vulputate, posuere odio in, consequat lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent faucibus aliquam maximus. Ut iaculis dolor lectus, vel tempor lorem euismod eu. Praesent dignissim accumsan sapien, quis volutpat dui pulvinar et. Donec id elementum leo. Praesent sit amet mi quis libero cursus congue. Aenean eget ligula quis risus lobortis ullamcorper nec vel lectus. In convallis, mi quis consectetur elementum, quam lectus vehicula dui, sit amet facilisis sapien nunc et risus. Morbi vestibulum, enim at sagittis sagittis, dolor nisl interdum massa, ut cursus diam mauris quis sapien. Fusce metus tellus, pellentesque sit amet sapien non, gravida semper nulla.</p>
+			</article>
+		</section>
+		<footer>
+			<p>Desenvolvido por Maicon</p>
+		</footer>
+	</body>
+</html>

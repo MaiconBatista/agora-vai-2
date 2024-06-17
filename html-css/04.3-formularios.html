@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>HTML - Formulário fale conosco</title>
+		<link rel="stylesheet" type="text/css" href="./css/06.1-style.css">
+	</head>
+	<body>
+		<header>
+			<h2>Curso front-end - HTML</h2>
+		</header>
+		<section>
+		<!--Em HTML, uma section é um elemento semântico para criar seções independentes em uma página da web-->
+			<nav>
+				<ul>
+					<li><a href="./04.2-Layouts.html">Home</a></li>
+					<!-- usamos dois pontos (..) para poder voltar uma pasta e ter acesso ao arquivo que estava em outra pasta, colocando o nome da pasta que esta o outro arquivo ou somente o nome do arquivo se estiver solto na pasta anterior-->
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>
+			</nav>
+			<article>
+			<!--O Elemento HTML Article (<article>) representa uma composição independente em um documento, página, aplicação, ou site, ou que é destinado a ser distribuido de forma independente ou reutilizável, por exemplo, em sindicação-->
+				<h1>Contato</h1>
+				<p>Preencha os campos abaixo:</p>
+				<form method="post">
+				<!--O atributo method especifica como enviar dados de formulário (os dados de formulário são enviados para a página especificada no atributo action). Os dados do formulário podem ser enviados como variáveis ​​de URL (com method="get" ) ou como pós-transação HTTP (com method="post" ). -->
+				<!-- com o método get ele acrescenta a responda no link URL e o metodo post não altera a URl -->
+					<div>
+					<!--A tag <div> cria um bloco genérico para agrupar conteúdos. Ela é equivalente, no grupo de tags de bloco, ao que a tag <span> representa no grupo de tags inline/conteúdo. A função da tag <div> é separar os conteúdos do código HTML em divisões de espaço/conjunto, sem qualquer peso semântico.-->
+						<label for="nome">Nome</label>
+						<!-- A tag label é importante para os campos de formulários. Ela especifica qual o "rótulo" do input -->
+						<!-- For. É o atributo de entrada para qual o <label> se destina. Seu valor deve ser igual ao valor do atributo "id" do elemento controle de entrada (<input>).-->
+						<input type="text" name="nome" id="name" placeholder="Digite seu nome">
+						<!--O elemento HTML <input> é usado para criar controles interativos para formulários baseados na web para receber dados do usuário. A semântica de um <input> varia consideravelmente dependendo do valor de seu atributo type e existe vários tenho um arquivo com o nome input com o exemplo de algusn types-->
+						<!--O "name" é um atributo muito importante para os campos do tipo input. Ele serve para identificar o valor daquela variável no nosso backend-->
+						<!--O atributo global id define um identificador exclusivo (ID) que deve ser único por todo o documento. Seu objetivo é identificar o elemento ao navegar por âncoras-->
+					</div> 
+					<div>
+						<label for="email">E-mail</label>
+						<input type="email" name="email" id="email" placeholder="Digite seu email">	
+					</div>
+					<div>
+						<label for="msg">Mensagem</label>
+						<textarea name="msg" id="msg" rows="5" cols="20"></textarea>
+					</div>
+					<div>
+						<p>
+							<label>Qual linguagem você prefere?</label>
+							<input type="radio" name="linguagens" value="html"> HTML
+							<!--VALUE:é um atributo obrigatório que especifica o valor do INPUT quando este botão é selecionado (botões não selecionados são desconsiderados durante a submissão dos dados)-->
+							<!--usado pelo backend-->
+							<input type="radio" name="linguagens" value="CSS"> CSS
+							<input type="radio" name="linguagens" value="JS">JavaScript
+						</p>
+					</div>
+					<div>
+						<p>
+							<label>Quais linguagens você conhece?</label>
+							<input type="checkbox" name="" value="html"> HTML
+							<input type="checkbox" name="" value="css"> CSS
+							<input type="checkbox" name="" value="JS"> JavaScript		
+						</p>
+					</div>
+					<div>
+						<label>Qual a sua cor favorita?</label>
+						<select>
+						<!--O elemento HTML select (<select>) representa um controle que apresenta um menu de opções. As opções dentro do menu são representadas pelo elemento <option> , que podem ser agrupados por elementos <optgroup> . As opções podem ser pré-selecionadas para o usuário.-->
+							<option value="vermelho">Vermelho</option>
+							<option value="azul">Azul</option>
+							<option value="roxo" selected>Roxo</option>
+							<!--selected serve para indicar qual o valor que já deve vir preenchido-->
+						</select>							
+					</div>
+					<div>
+						<input type="submit">
+					</div>
+
+				</form>
+			</article>
+		</section>
+		<footer>
+			<p>Desenvolvido por Maicon</p>
+		</footer>
+	</body>
+</html>

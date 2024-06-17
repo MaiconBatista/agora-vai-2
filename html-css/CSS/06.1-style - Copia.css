@@ -1,0 +1,156 @@
+/* o css funciona em forma de cascata sendo que o mais baixo com maior prioridade */
+/* Arquivo CSS geral com estilos dos elementos de todas as páginas */
+* {
+  box-sizing: border-box;
+}
+/*
+- content-box: Essa é o estilo padrão, conforme especificado pela norma CSS. As propriedades width (largura) e height (altura) são medidas incluindo só o conteúdo, mas não o padding, border ou margin. Nota: Padding, border e margin serão fora da box. Exemplo.: Se .box {width: 350px} então se você aplicar uma propriedade {border: 10px solid black;} o resultado renderizado no navegador (browser) será .box {width: 370px;}
+
+- padding-box: As propriedades de largura (width) e de altura (height) incluem o tamanho padding size, mas não incluem a propriedade border ou margem.
+
+- border-box: As propriedades de largura (width) e de altura (height) incluem o tamanho padding size e a propriedade border, mas não incluem a propriedade margin. 
+*/
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+  font-size: 62.5%; /* 62,50% é o equivalente a 10px, pq por padrão o html é 16px */
+}
+
+body {
+  background-color: green;
+}
+
+h1, h2, p {
+  font-family: arial, Helvetica, sans-serif;
+  color: #454545;
+ 
+}
+
+a {
+  color: #d4d8;
+  text-decoration: none;
+}
+
+#primeiro-link a {
+  color: red;
+}
+
+/* # seletor para id */
+#meunome {
+  color: red;
+}
+
+ul {
+  background-color: yellow;
+  font-size: 20px;
+}
+
+ul li{
+  font-size: .8em;/* em é a unidade relativa ao elemento pai, neste caso o ul - font-size: 20px, portanto neste elemento filho ele terá somente metade do tamanho 80% 16px */
+  font-size: 1.6rem; /*equivalente a 16px*/
+  width: 90%;/* estou dizendo para ele ocupar 80% do espaço do ul */
+  height: 3rem; /* equivalente a 30px */
+}
+
+p{
+  font-size: 1.6rem; 
+/* Root em (rem) ele não é baseado no elemento pai e sim no root, neste caso o html */
+/* equivalente a 16px, pois 10x1,6=16px */
+}
+
+h2 {
+  font-size: 2rem; /* equivalente a 20px */
+}
+
+/* .xxx seletor para class */
+.navegacao {
+  background: #ffffff;
+}
+
+form div {
+  background-color: #fff;
+  border: 0; /* para a borda precisamos colocar todas as propriedades, se ela é solida(solid) ou tracejada (dashed) */
+  border-bottom: 1px solid #33f;
+  /*
+  border-top: 1px solid #33f;;
+  border-left: 1px solid #33f;;
+  border-right: 1px solid #33f; 
+  */
+  margin: 10px 20px 10px 20px; /* margin 10px todas as direções. margin 10px(top) 10px(right) 10px(bottom) 10px(left) */
+  padding: 2rem; /*20px*/
+}
+
+label {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  font-weight: bold; /* negrito */
+  color: #66f;
+}
+
+input{
+  padding: 1rem; /*10px*/
+}
+
+[type="text"], [type="email"], textarea, label {
+  display: block; /* como o label tem por padrão o display in-line ñ será quebrado a linha por isso colocamos o display-block, não sendo necessário o widht em 100%*/
+  width: 100%; /* como o br não é um padrão legal de se usar por isso colocamos o label a 100% forçando a quebra de linha */
+}
+
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+nav {
+  width: 30%;
+  float: left;               
+  background: #ccc;
+  padding: 20px;
+}
+ 
+/* A floatpropriedade é usada para posicionar e formatar o conteúdo, por exemplo, deixar uma imagem flutuar à esquerda do texto em um contêiner. A floatpropriedade pode ter um dos seguintes valores:
+left- O elemento flutua à esquerda de seu contêiner
+right- O elemento flutua à direita de seu contêiner
+none- O elemento não flutua (será exibido apenas onde ocorre no texto). Isso é padrão
+inherit- O elemento herda o valor float de seu pai
+Em seu uso mais simples, a floatpropriedade pode ser usada para quebrar texto em torno de imagens.
+*/
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+}
+
+section::after {
+  background: #ccc;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+}
+}

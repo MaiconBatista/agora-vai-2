@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/08.2-Layouts-Fluidos.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Layouts Fluidos</h1>
+    <p>Adapta a largura da tela</p>
+
+    <section>
+        <h2>100% width / Largura</h2>
+        <div class="width-100">
+            <nav>
+                navegação
+            </nav>
+            <article>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt fugit adipisci est id consequuntur neque eos, natus optio necessitatibus molestiae, assumenda porro distinctio incidunt tempora consectetur totam mollitia a facere.
+
+                <div class="fixed-width">Largura Fixa
+                </div>
+                <div class="background">
+                    Repetir imagem na horizontal
+                </div>
+                <div>
+                    <picture>
+                        <source media="(min-width: 280px)" srcset="./images/coffee-sm.jpg">
+                        <source media="(min-width: 600px)" srcset="./images/coffee-square.jpg">
+                        <img srcset="./images/coffee.jpg" alt="Café">
+                        <!-- se a largura da tela for de 800px ira aparecer a imagem coffee-square, se for de 480px a img coffee-sm -->
+                    </picture>
+                </div>
+            </article>
+        </div>
+    </section>
+</body>
+</html>

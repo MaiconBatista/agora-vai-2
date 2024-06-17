@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layouts Web</title>
+        
+        <!-- RESET -->
+        <link rel="stylesheet" href="./CSS/reset.css">
+        
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+        
+        <!-- ESTILOS PERSONALIZADOS -->
+        <link rel="stylesheet" href="./CSS/reset.css">
+        <link rel="stylesheet" href="./CSS/07.1-layout.css">
+        <link rel="stylesheet" href="./CSS/08.4-graficos.css">
+    </head>
+    <body>
+        
+        <header>
+            <h2>Front-end</h2>
+        </header>
+
+        <Section>
+            <nav>
+                <h3>Aulas</h3>
+                <ul class="navegacao">
+                    <li><a href="./03.1-introducao.html">Introdução</a></li>
+                    <li><a href="./03.2-listas-e-links.html">Listas e Links</a></li>
+                    <li><a href="./03.3-formatacao-de-texto.html">Formatação de Texto</a></li>
+                    <li><a href="./03.4-Tabelas.html">Tabelas</a></li>
+                    <li><a href="./04.2-Layouts.html">Layouts</a></li>
+                    <li><a href="./04.3-formularios.html">Formulários</a></li>
+                    <li><a href="./fundamentos-css.html">Fundamentos do CSS</a></li>
+                    <li><a href="./08.2-Layouts-Fluidos.html">Layouts Fluídos</a></li>
+                    <li><a href="./08.4-Elementos-graficos.html" target="meu_iframe">Elementos Gráficos</a></li>
+                    <li><a href="./09.1-layouts-web.html">Layouts Web</a></li>
+                    <li><a href="https://ebaconline.com" target="_blank">EBAC</a></li><!--target criado para ao clicar no link direcionar para outra pagina-->
+                </ul>
+            </nav>
+            <article>
+                <div class="coluna">
+                    <h3>Layouts em Colunas</h3>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ldl_CvMGmEA?si=Q3-iQJZCt-18DXNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="coluna">
+                    <div id="grafico-01">
+                        <img class="filtro" src="./images/coffee-square.jpg" alt="café">
+                    </div>
+                </div>
+                <div class="coluna coluna-3"> <!--duas class separadas por espaço-->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis inventore autem facere id vero deserunt aspernatur facilis veritatis distinctio sint ad labore iusto molestiae voluptates quibusdam consectetur, amet voluptatum exercitationem? 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sunt nam quidem unde facere iure iste blanditiis exercitationem, nostrum minima nisi veritatis sequi, fugiat, beatae mollitia animi ab laboriosam soluta.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, nostrum corporis sint quia temporibus eos nam, eum excepturi ea repellat sed repudiandae tempore delectus ipsam laudantium dolores alias dolor perspiciatis.
+                </div>
+
+                <span></span> <!-- tag genérica como a div -->
+
+                <div class="coluna">
+                    <!--Cria moldura para carregar uma página dentro de outra-->
+                    <iframe src="03.2-listas-e-links.html" name="meu_iframe"></iframe>
+                </div>
+                <div class="coluna coluna-100w">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d386.7755528102744!2d-50.7916845524371!3d-22.741250051887558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9494dbb5d13f905d%3A0x28ce07199a3fd20d!2sMini%20Mercado%20Oba%20Oba!5e0!3m2!1spt-BR!2sbr!4v1697053396579!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </article>
+            
+        </Section>
+        <footer>
+            <p>Desenvolvido por Marcelo Cavalcante</p>
+        </footer>
+    </body>
+</html>
