@@ -42,6 +42,8 @@ Fluxo do Git
 - push (salvar na nuvem/repositório remoto "GitHub")
 - origin (tirar do repositório local "Git" para o remoto "GitHub")
 - merge (unir ao ramo principal)
+- cd "10. GIT não fiz\patricando-m10-curso-frontend" (usar aspas duplas (") p/ cercar o caminho do diretório. Isso garantirá que o PowerShell interprete o caminho corretamente, mesmo se ele contiver espaços ou caracteres especiais.)
+
 
 
 - git config --glogal user.email (para adicionar um email, mais este eu nao testei ainda)
