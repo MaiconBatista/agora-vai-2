@@ -19,6 +19,7 @@ body {
     padding: 20px;
     width: 100%;
     margin: 0 auto;
+    max-width: 1198px;
 }
 
 header {
@@ -97,6 +98,11 @@ nav a:hover {
     color: #385874
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 ol {
     margin-left: 30px;
 }
@@ -127,4 +133,20 @@ footer p {
 footer small {
     font-size: 80%;
     display: block;
+}
+
+.cognito {
+    height: 370px !important;
+    overflow: hidden;
+}
+
+#tenho-interesse {
+    background-color: #b8c8d6;
+    width: 100%;
+}
+
+#tenho-interesse form,
+.cog-form__content {
+    background-color: #b8c8d6 !important;
+    width: 100%;
 }
